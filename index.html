@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dra. Ilana Dornelas — Dermatologista em Itaim Bibi, São Paulo. Especialista em tricologia, estética avançada, laser e cirurgia dermatológica. CRM-SP 283715.">
+<meta name="keywords" content="dermatologista itaim bibi, tricologia são paulo, botox são paulo, laser pele, queda de cabelo tratamento">
+<meta property="og:title" content="Dra. Ilana Dornelas — Dermatologista">
+<meta property="og:description" content="Cuidado dermatológico personalizado em Itaim Bibi, São Paulo.">
+<meta property="og:type" content="website">
+<title>Dra. Ilana Dornelas — Dermatologista · Itaim Bibi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-logo">Dra. Ilana Dornelas</div>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#especialidades">Especialidades</a></li>
+    <li><a href="#processo">Processo</a></li>
+    <li><a href="#localizacao">Localização</a></li>
+  </ul>
+  <a href="#agendamento" class="nav-cta">Agendar consulta</a>
+  <button class="nav-burger" aria-label="Menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+  <a href="#especialidades" onclick="toggleMenu()">Especialidades</a>
+  <a href="#processo" onclick="toggleMenu()">Processo</a>
+  <a href="#localizacao" onclick="toggleMenu()">Localização</a>
+  <a href="#agendamento" class="mobile-cta" onclick="toggleMenu()">Agendar consulta</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Dermatologia · Estética · Tecnologia</p>
+    <h1 class="hero-title">
+      Medicina<br>
+      da pele com<br>
+      <em>precisão e arte</em>
+    </h1>
+    <p class="hero-subtitle">Itaim Bibi · São Paulo</p>
+    <p class="hero-desc">
+      Cuidado dermatológico personalizado, com foco em resultados naturais e duradouros. Da saúde da pele à estética de alto padrão.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="abrirWhatsApp('Olá! Vim pelo site e gostaria de agendar uma consulta.')">Agendar avaliação</button>
+      <a href="#especialidades" class="btn-secondary">Ver especialidades →</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-image-wrap">
+      <div class="hero-image-overlay"></div>
+      <img src="assets/images/dra-ilana.jpg" alt="Dra. Ilana Dornelas — Dermatologista" class="hero-photo" onerror="this.style.display='none'; document.querySelector('.hero-ornament').style.display='flex'">
+      <div class="hero-ornament" style="display:none">
+        <div class="hero-ornament-inner"></div>
+      </div>
+      <div class="hero-dr-label">
+        <span>Médica responsável · CRM-SP 283715</span>
+        <strong>Dra. Ilana Dornelas</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SOBRE -->
+<section id="sobre" class="section-sobre">
+  <div class="sobre-grid">
+    <div class="sobre-content">
+      <p class="section-label">Sobre a médica</p>
+      <h2 class="section-title">Dra. Ilana<br><em>Dornelas</em></h2>
+      <p class="sobre-text">
+        Dermatologista com formação clínica e estética, dedicada ao cuidado integral da pele, cabelo e procedimentos com tecnologia de ponta. Atendimento individualizado no coração do Itaim Bibi.
+      </p>
+      <p class="sobre-text">
+        Especialista em tricologia e tratamentos capilares avançados, com abordagem médica que une diagnóstico preciso e resultados estéticos refinados.
+      </p>
+      <div class="sobre-stats">
+        <div class="stat">
+          <div class="stat-number">12+</div>
+          <div class="stat-label">Anos de experiência</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">5k+</div>
+          <div class="stat-label">Pacientes atendidos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Atendimento personalizado</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">9°</div>
+          <div class="stat-label">Andar com vista exclusiva</div>
+        </div>
+      </div>
+    </div>
+    <div class="sobre-visual">
+      <div class="sobre-monogram">ID</div>
+    </div>
+  </div>
+</section>
+
+<!-- ESPECIALIDADES -->
+<section id="especialidades" class="section-especialidades">
+  <div class="esp-header">
+    <div>
+      <p class="section-label">Áreas de atuação</p>
+      <h2 class="section-title">Especialidades<br><em>&amp; Tratamentos</em></h2>
+    </div>
+    <button class="btn-primary" onclick="abrirWhatsApp('Olá! Gostaria de saber mais sobre as especialidades e agendar uma consulta.')">Agendar consulta</button>
+  </div>
+  <div class="esp-grid">
+    <div class="esp-card">
+      <span class="esp-icon">✦</span>
+      <div class="esp-name">Dermatologia Clínica</div>
+      <div class="esp-desc">Diagnóstico e tratamento de doenças da pele, consultas de rotina, manchas, acne, rosácea e dermatites.</div>
+    </div>
+    <div class="esp-card">
+      <span class="esp-icon">◈</span>
+      <div class="esp-name">Estética Avançada</div>
+      <div class="esp-desc">Toxina botulínica, preenchimento com ácido hialurônico, bioestimuladores de colágeno e harmonização facial.</div>
+    </div>
+    <div class="esp-card">
+      <span class="esp-icon">◎</span>
+      <div class="esp-name">Laser &amp; Tecnologia</div>
+      <div class="esp-desc">IPL, laser fracionado, radiofrequência, ultrassom microfocado e fototerapia para rejuvenescimento.</div>
+    </div>
+    <div class="esp-card esp-card--destaque">
+      <div class="esp-badge">Destaque</div>
+      <span class="esp-icon">❧</span>
+      <div class="esp-name">Tricologia Capilar</div>
+      <div class="esp-desc">Diagnóstico capilar especializado, tratamento de alopecia, queda e calvície com protocolos exclusivos.</div>
+    </div>
+    <div class="esp-card">
+      <span class="esp-icon">⚕</span>
+      <div class="esp-name">Cirurgia Dermatológica</div>
+      <div class="esp-desc">Remoção de lesões, cistos, nevos e procedimentos cirúrgicos de alta precisão com anestesia local.</div>
+    </div>
+  </div>
+
+  <div class="capilar-destaque">
+    <div class="capilar-intro">
+      <div class="capilar-badge">Especialidade principal</div>
+      <div class="capilar-title">Tricologia &amp;<br>Saúde Capilar</div>
+    </div>
+    <div class="capilar-items">
+      <div class="capilar-item">
+        <div class="capilar-item-name">Diagnóstico Tricoscópico</div>
+        <div class="capilar-item-desc">Avaliação avançada do couro cabeludo e fio com tricoscópio de alta resolução</div>
+      </div>
+      <div class="capilar-item">
+        <div class="capilar-item-name">Alopecia Androgenética</div>
+        <div class="capilar-item-desc">Tratamento medicamentoso e procedimentos para queda de origem hormonal</div>
+      </div>
+      <div class="capilar-item">
+        <div class="capilar-item-name">Mesoterapia Capilar</div>
+        <div class="capilar-item-desc">Aplicação de ativos diretamente no couro cabeludo para nutrir e estimular</div>
+      </div>
+      <div class="capilar-item">
+        <div class="capilar-item-name">PRP Capilar</div>
+        <div class="capilar-item-desc">Plasma rico em plaquetas para regeneração e fortalecimento dos folículos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section id="processo" class="section-processo">
+  <p class="section-label">Como funciona</p>
+  <h2 class="section-title">Da consulta ao<br><em>resultado</em></h2>
+  <div class="processo-steps">
+    <div class="processo-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Primeiro contato</div>
+      <div class="step-desc">Fale com a Elara, nossa assistente, pelo WhatsApp. Ela entende sua necessidade e já prepara seu agendamento.</div>
+    </div>
+    <div class="processo-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Avaliação médica</div>
+      <div class="step-desc">Consulta presencial completa com anamnese detalhada, diagnóstico preciso e definição do protocolo ideal.</div>
+    </div>
+    <div class="processo-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Protocolo personalizado</div>
+      <div class="step-desc">Plano de tratamento individualizado, com combinação de procedimentos e cronograma de sessões.</div>
+    </div>
+    <div class="processo-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Acompanhamento</div>
+      <div class="step-desc">Follow-up contínuo para avaliar evolução, ajustar protocolos e garantir os melhores resultados.</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section id="localizacao" class="section-localizacao">
+  <div class="localizacao-grid">
+    <div class="loc-content">
+      <p class="section-label">Onde nos encontrar</p>
+      <h2 class="section-title">Itaim Bibi,<br><em>São Paulo</em></h2>
+      <div class="loc-details">
+        <div class="loc-detail">
+          <div class="loc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div>
+            <div class="loc-label">Endereço</div>
+            <div class="loc-value">R. Joaquim Floriano, 413 — 9º andar<br>Itaim Bibi, São Paulo — SP<br>CEP 04534-011</div>
+          </div>
+        </div>
+        <div class="loc-detail">
+          <div class="loc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="loc-label">Horário de atendimento</div>
+            <div class="loc-value">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 13h</div>
+          </div>
+        </div>
+        <div class="loc-detail">
+          <div class="loc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.17 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="loc-label">WhatsApp · Elara</div>
+            <div class="loc-value">(11) 9 2524-3636<br>Resposta em até 1 hora</div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="abrirWhatsApp('Olá! Gostaria de saber como chegar à clínica.')">Como chegar →</button>
+    </div>
+    <div class="map-placeholder">
+      <div class="map-pin">
+        <div class="map-pin-dot"></div>
+        <div class="map-address">R. Joaquim Floriano, 413<br>9º andar · Itaim Bibi</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDAMENTO -->
+<section id="agendamento" class="section-agendamento">
+  <p class="section-label">Agende sua consulta</p>
+  <h2 class="section-title">Cuide da sua pele com<br><em>quem entende</em></h2>
+  <p class="ag-subtitle">Preencha os dados abaixo e a Elara entrará em contato para confirmar seu horário</p>
+  <form class="ag-form" onsubmit="handleSubmit(event)">
+    <input type="text" id="ag-nome" placeholder="Nome completo" required autocomplete="name">
+    <input type="tel" id="ag-tel" placeholder="Seu WhatsApp" required autocomplete="tel">
+    <select id="ag-servico" class="ag-form-full" required>
+      <option value="" disabled selected>Selecione o serviço de interesse</option>
+      <option value="Dermatologia clínica">Dermatologia clínica</option>
+      <option value="Estética avançada (botox / preenchimento)">Estética avançada (botox / preenchimento)</option>
+      <option value="Laser &amp; tecnologia">Laser &amp; tecnologia</option>
+      <option value="Tricologia / tratamento capilar">Tricologia / tratamento capilar</option>
+      <option value="Cirurgia dermatológica">Cirurgia dermatológica</option>
+      <option value="Avaliação geral">Não sei ainda — quero uma avaliação geral</option>
+    </select>
+    <button type="submit" class="ag-submit">Falar com a Elara via WhatsApp</button>
+    <p class="ag-note">* A consulta de avaliação é paga. Após o preenchimento, você será direcionada ao WhatsApp para confirmação com a Elara.</p>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-logo">Dra. Ilana Dornelas</div>
+  <div class="footer-copy">© 2025 · Todos os direitos reservados</div>
+  <div class="footer-crm">CRM-SP 283715 · Dermatologista<br>Itaim Bibi · São Paulo</div>
+</footer>
+
+<!-- ELARA FLOATING BUTTON -->
+<div class="elara-badge" onclick="abrirWhatsApp('Olá! Gostaria de agendar uma consulta com a Dra. Ilana.')">
+  <div class="elara-dot"></div>
+  <div class="elara-info">
+    <div class="elara-text">Assistente virtual</div>
+    <div class="elara-name">Elara</div>
+  </div>
+  <span class="elara-arrow">→</span>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
