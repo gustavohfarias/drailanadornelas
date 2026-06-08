@@ -1,18 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
-  <!-- fundo creme -->
   <rect width="120" height="120" fill="#F2EDE6"/>
-
-  <!-- I: stroke fino -->
-  <g fill="none" stroke="#8B6F47" stroke-width="1.4">
-    <line x1="40" y1="18" x2="40" y2="102"/>
-    <line x1="30" y1="18" x2="50" y2="18"/>
-    <line x1="30" y1="102" x2="50" y2="102"/>
-  </g>
-
-  <!-- D: stroke mais pesado, dourado -->
-  <path d="
-    M46 18
-    L46 102
-    M46 18 C46 18 82 18 90 38 C97 54 97 66 90 82 C82 98 46 102 46 102
-  " fill="none" stroke="#B8976A" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- I: haste + serifas, centrado -->
+  <line x1="52" y1="20" x2="52" y2="100" stroke="#8B6F47" stroke-width="3"/>
+  <line x1="44" y1="20" x2="60" y2="20" stroke="#8B6F47" stroke-width="2"/>
+  <line x1="44" y1="100" x2="60" y2="100" stroke="#8B6F47" stroke-width="2"/>
+  <!-- D: começa no mesmo eixo que o I, curva para direita -->
+  <path d="M52 20 L52 100 C52 100 88 98 96 78 C102 62 102 58 96 42 C88 22 52 20 52 20Z"
+    fill="#D4B896" opacity="0.25"/>
+  <path d="M52 20 C52 20 88 22 96 42 C102 58 102 62 96 78 C88 98 52 100 52 100"
+    fill="none" stroke="#B8976A" stroke-width="3" stroke-linecap="round"/>
 </svg>

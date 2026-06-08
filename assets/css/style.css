@@ -203,3 +203,6 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
 
 /* Hero frase de impacto */
 .hero-title { font-size: clamp(2.8rem, 5.5vw, 5.5rem); }
+
+.nav-logo-svg { height: 38px; width: auto; display: block; }
+.footer-logo-svg { height: 28px; width: auto; display: block; }
