@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- fundo creme -->
+  <rect width="120" height="120" fill="#F2EDE6"/>
+
+  <!-- I: stroke fino -->
+  <g fill="none" stroke="#8B6F47" stroke-width="1.4">
+    <line x1="40" y1="18" x2="40" y2="102"/>
+    <line x1="30" y1="18" x2="50" y2="18"/>
+    <line x1="30" y1="102" x2="50" y2="102"/>
+  </g>
+
+  <!-- D: stroke mais pesado, dourado -->
+  <path d="
+    M46 18
+    L46 102
+    M46 18 C46 18 82 18 90 38 C97 54 97 66 90 82 C82 98 46 102 46 102
+  " fill="none" stroke="#B8976A" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

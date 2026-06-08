@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160">
+  <defs>
+    <style>
+      .tagline { font-family: 'Montserrat', Arial, sans-serif; font-size: 9px; font-weight: 300; letter-spacing: 0.25em; }
+      .name    { font-family: 'Montserrat', Arial, sans-serif; font-size: 8px; font-weight: 400; letter-spacing: 0.3em; }
+    </style>
+  </defs>
+
+  <!-- Monograma ID — paths vetoriais da letra I (stroke) -->
+  <!-- I: haste vertical + serifas horizontais -->
+  <g fill="none" stroke="#8B6F47" stroke-width="1.2">
+    <!-- haste vertical I -->
+    <line x1="82" y1="22" x2="82" y2="108"/>
+    <!-- serifa topo I -->
+    <line x1="72" y1="22" x2="92" y2="22"/>
+    <!-- serifa base I -->
+    <line x1="72" y1="108" x2="92" y2="108"/>
+  </g>
+
+  <!-- D: haste vertical + curva direita -->
+  <path d="
+    M88 22
+    L88 108
+    M88 22 C88 22 130 22 138 42 C146 58 146 72 138 88 C130 104 88 108 88 108
+  " fill="none" stroke="#B8976A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Linha separadora -->
+  <line x1="155" y1="40" x2="155" y2="90" stroke="#D4B896" stroke-width="0.5"/>
+
+  <!-- Nome -->
+  <text x="168" y="58" class="name" fill="#4A3F35">ILANA DORNELAS</text>
+  <!-- Especialidade -->
+  <text x="168" y="73" class="tagline" fill="#8B6F47">DERMATOLOGISTA</text>
+  <!-- Tagline -->
+  <line x1="168" y1="82" x2="310" y2="82" stroke="#D4B896" stroke-width="0.3"/>
+  <text x="168" y="94" class="tagline" fill="#B8976A">SUA PELE, SUA IDENTIDADE</text>
+</svg>
