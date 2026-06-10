@@ -17,6 +17,27 @@
   --border-subtle:rgba(139,111,71,0.08);
   --font-serif:'Cormorant Garamond',Georgia,serif;
   --font-sans:'Montserrat',sans-serif;
+
+  /* Tamanhos tipográficos conforme manual página 6 */
+  --font-h1:48pt;
+  --font-h2:28pt;
+  --font-h3:14pt;
+  --font-body:10pt;
+  --font-label:7pt;
+
+  /* Letter-spacing */
+  --ls-label:0.35em;
+  --ls-nav:0.22em;
+  --ls-h3:0.08em;
+
+  /* Espaçamentos consistentes */
+  --section-padding:7rem 4rem;
+  --section-gap:3rem;
+  --card-gap:2rem;
+
+  /* Logo sizes */
+  --logo-nav-height:44px;
+  --logo-footer-height:32px;
 }
 
 html{scroll-behavior:smooth}
