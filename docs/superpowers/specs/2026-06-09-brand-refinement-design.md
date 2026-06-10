@@ -50,6 +50,16 @@ Align the website 100% with the official brand manual (`manual_marca_ID_v2.pdf`)
 - Never use fonts not authorized
 - Never use logo below 32px
 
+## Design Decisions
+
+**Approved deviation from brand manual:**
+
+The brand manual (page 5) specifies "Nav do site: Monograma ID solo, 48px, alinhado à esquerda" (nav logo should be monogram only). However, after evaluating options A (monogram only) vs B (monogram + name + specialty), **the user explicitly chose option B** for stronger branding and professional presence on desktop.
+
+This decision maintains brand integrity while optimizing for recognition and trust. Mobile navbar still uses monogram-only to save space, aligning with the manual's minimalist intention.
+
+All other specifications follow the manual exactly.
+
 ## Problems to Solve
 
 1. **Performance:** 810KB of logo PNGs loading on every page (99.7% larger than necessary)
