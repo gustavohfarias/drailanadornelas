@@ -140,12 +140,12 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 .esp-card-bg--cirurgia{background:linear-gradient(135deg,#b5a898 0%,#8c7b6b 100%)}
 .esp-card-bg--skincare{background:linear-gradient(135deg,#c2b5c8 0%,#9a8aa0 100%)}
 .esp-card-img:hover .esp-card-bg{transform:scale(1.04)}
-.esp-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,20,16,0.88) 0%,rgba(26,20,16,0.2) 60%,transparent 100%)}
+.esp-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,20,16,0.92) 0%,rgba(26,20,16,0.3) 60%,transparent 100%)}
 .esp-card-content{position:absolute;bottom:0;left:0;right:0;padding:2rem;z-index:2}
-.esp-card-tag{font-size:0.5rem;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.6);border:0.5px solid rgba(255,255,255,0.3);padding:0.25rem 0.6rem;display:inline-block;margin-bottom:0.8rem;font-family:var(--font-sans)}
+.esp-card-tag{font-size:var(--font-label);letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.7);border:0.5px solid rgba(255,255,255,0.4);padding:0.25rem 0.6rem;display:inline-block;margin-bottom:0.8rem;font-family:var(--font-sans)}
 .esp-card-tag--gold{color:var(--gold-pale);border-color:var(--gold-pale)}
 .esp-card-title{font-family:var(--font-serif);font-size:1.5rem;font-weight:300;color:#FAF8F5;margin-bottom:0.6rem;line-height:1.2}
-.esp-card-desc{font-size:0.72rem;line-height:1.7;color:rgba(250,248,245,0.75);margin-bottom:1.2rem}
+.esp-card-desc{font-size:var(--font-body);line-height:1.7;color:rgba(250,248,245,0.85);margin-bottom:1.2rem}
 .esp-card-btn{font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;color:#FAF8F5;background:none;border:0.5px solid rgba(250,248,245,0.5);padding:0.5rem 1rem;cursor:pointer;font-family:var(--font-sans);transition:all 0.3s}
 .esp-card-btn:hover{background:var(--gold-dark);border-color:var(--gold-dark)}
 
