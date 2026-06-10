@@ -209,7 +209,9 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 
 /* ── FOOTER ── */
 footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;border-top:0.5px solid var(--border);background:var(--cream)}
-.footer-logo svg{height:36px;width:auto;display:block}
+.footer-logo{padding:12px}
+.footer-logo-svg{display:block;height:var(--logo-footer-height);width:auto;transition:transform 0.3s ease}
+.footer-logo:hover .footer-logo-svg{transform:scale(1.02)}
 .footer-copy{font-size:0.58rem;color:var(--text-muted);letter-spacing:0.1em}
 .footer-crm{font-size:0.58rem;color:var(--text-muted);letter-spacing:0.1em;text-align:right;line-height:1.7}
 
