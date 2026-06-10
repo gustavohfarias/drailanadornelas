@@ -76,6 +76,11 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 .section-title{font-family:var(--font-serif);font-weight:300;font-size:clamp(2rem,3.5vw,3rem);line-height:1.15;color:var(--text)}
 .section-title em{font-style:italic;color:var(--gold)}
 
+/* ── ELEMENTOS DECORATIVOS ── */
+.divider-gold{border-top:0.5px solid var(--gold-pale);width:100%;margin:1.5rem 0}
+.divider-vertical{border-left:0.5px solid var(--gold-pale);height:40px}
+.border-subtle{border:0.5px solid var(--border-subtle)}
+
 /* ── HERO ── */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--warm)}
 .hero-bg{position:absolute;inset:0;z-index:0}
