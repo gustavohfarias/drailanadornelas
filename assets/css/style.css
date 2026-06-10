@@ -72,8 +72,8 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 .btn-outline-gold:hover{background:var(--gold-dark);color:var(--cream)}
 
 /* ── UTILS ── */
-.section-label{font-size:0.55rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;display:block}
-.section-title{font-family:var(--font-serif);font-weight:300;font-size:clamp(2rem,3.5vw,3rem);line-height:1.15;color:var(--text)}
+.section-label{font-size:var(--font-label);letter-spacing:var(--ls-label);text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;display:block}
+.section-title{font-family:var(--font-serif);font-weight:300;font-size:clamp(2rem,3.5vw,var(--font-h2));line-height:1.15;color:var(--text)}
 .section-title em{font-style:italic;color:var(--gold)}
 
 /* ── ELEMENTOS DECORATIVOS ── */
@@ -106,19 +106,19 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 .sobre-photo-wrap{position:relative}
 .sobre-photo-placeholder{height:520px;background:var(--warm);border:0.5px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .sobre-crm{position:absolute;bottom:-1.2rem;right:-1.2rem;background:var(--gold-dark);color:var(--cream);font-size:0.55rem;letter-spacing:0.2em;padding:0.5rem 1rem;font-weight:500;font-family:var(--font-sans)}
-.sobre-text{font-size:0.86rem;line-height:1.9;color:var(--text-sec);margin-top:1.2rem}
+.sobre-text{font-size:var(--font-body);line-height:1.9;color:var(--text-sec);margin-top:1.2rem}
 .sobre-text strong{color:var(--gold-dark);font-weight:500}
 .sobre-diferenciais{margin-top:2.5rem;display:flex;flex-direction:column;gap:1.2rem}
 .diferencial{display:flex;gap:1rem;align-items:flex-start}
 .diferencial-icon{color:var(--gold);font-size:1rem;flex-shrink:0;margin-top:0.1rem;width:20px}
-.diferencial-title{font-size:0.72rem;font-weight:500;letter-spacing:0.08em;color:var(--text);margin-bottom:0.2rem}
-.diferencial-desc{font-size:0.7rem;color:var(--text-muted);line-height:1.6}
+.diferencial-title{font-size:var(--font-body);font-weight:500;letter-spacing:var(--ls-h3);color:var(--text);margin-bottom:0.2rem}
+.diferencial-desc{font-size:var(--font-body);color:var(--text-muted);line-height:1.6}
 
 /* ── PREOCUPAÇÕES ── */
 .section-preocupacoes{padding:7rem 4rem;background:var(--warm);border-top:0.5px solid var(--border-subtle)}
 .preo-inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
 .preo-list{list-style:none;margin:2rem 0;display:flex;flex-direction:column;gap:0.9rem}
-.preo-list li{font-size:0.84rem;line-height:1.7;color:var(--text-sec);padding-left:1.2rem;position:relative}
+.preo-list li{font-size:var(--font-body);line-height:1.7;color:var(--text-sec);padding-left:1.2rem;position:relative}
 .preo-list li::before{content:'—';position:absolute;left:0;color:var(--gold);font-size:0.7rem}
 .preo-cta-text{font-size:0.84rem;line-height:1.8;color:var(--text-sec);margin-bottom:2rem;font-family:var(--font-serif);font-style:italic;font-size:1rem;border-left:2px solid var(--gold);padding-left:1rem;color:var(--gold-dark)}
 .preo-image-placeholder{height:480px;background:var(--surface);border:0.5px solid var(--border);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
