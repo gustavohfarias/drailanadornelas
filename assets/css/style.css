@@ -244,5 +244,9 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
   .elara-badge{bottom:1rem;right:1rem}
   .preo-image-placeholder{height:320px}
 }
-@media(max-width:480px){.hero-title{font-size:2.8rem}.insta-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){
+  .hero-title{font-size:clamp(2.2rem,9vw,2.8rem)}
+  .section-title{font-size:clamp(1.6rem,6vw,2rem)}
+  .insta-grid{grid-template-columns:repeat(2,1fr)}
+}
 
