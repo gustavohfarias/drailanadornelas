@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60">
+  <!-- Monograma ID -->
+  <g fill="none" stroke="#8B6F47" stroke-width="1.2">
+    <!-- I: haste vertical + serifas -->
+    <line x1="18" y1="12" x2="18" y2="48"/>
+    <line x1="13" y1="12" x2="23" y2="12"/>
+    <line x1="13" y1="48" x2="23" y2="48"/>
+  </g>
+
+  <!-- D: haste + curva -->
+  <path d="M20 12 L20 48 M20 12 C20 12 35 12 38 20 C41 26 41 34 38 40 C35 46 20 48 20 48"
+        fill="none" stroke="#B8976A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Linha separadora vertical -->
+  <line x1="52" y1="18" x2="52" y2="42" stroke="#D4B896" stroke-width="0.5"/>
+
+  <!-- Nome -->
+  <text x="62" y="28" font-family="Montserrat,Arial,sans-serif" font-size="9"
+        font-weight="400" letter-spacing="2.5" fill="#4A3F35">ILANA DORNELAS</text>
+
+  <!-- Especialidade -->
+  <text x="62" y="38" font-family="Montserrat,Arial,sans-serif" font-size="6.5"
+        font-weight="300" letter-spacing="2" fill="#8B6F47">DERMATOLOGISTA</text>
+</svg>
