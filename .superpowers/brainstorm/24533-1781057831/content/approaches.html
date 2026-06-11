@@ -1,0 +1,151 @@
+<h2>Abordagens de Implementação</h2>
+<p class="subtitle">3 estratégias para implementar a revisão completa do site</p>
+
+<div class="section">
+  <h3>🎯 Escopo Confirmado</h3>
+  <div style="background: #F0FDF4; border: 1px solid #86EFAC; padding: 1.5rem; margin-bottom: 2rem;">
+    <h4 style="color: #059669; margin-bottom: 0.8rem;">✓ Nível Máximo — Revisão Completa</h4>
+    <ul style="font-size: 0.85em; line-height: 2; color: #065F46;">
+      <li>Substituir logos PNG → SVG com variações responsivas</li>
+      <li>Ajustar hierarquia tipográfica conforme manual (H1: 48pt, H2: 28pt, H3: 14pt, Body: 10pt)</li>
+      <li>Revisar espaçamentos para consistência e breathing room</li>
+      <li>Adicionar elementos decorativos (linhas gold pale, bordas sutis)</li>
+      <li>Garantir letter-spacing e caps corretos em labels</li>
+      <li>Ajustar overlays e legibilidade nos cards</li>
+      <li>Manter placeholder no hero (sem foto por enquanto)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="incremental" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Incremental — Componente por Componente</h3>
+      <p style="margin: 0.8rem 0;"><strong>Estratégia:</strong> Refinar seção por seção, começando pelo nav e descendo até o footer</p>
+
+      <div class="pros-cons" style="margin-top: 1rem; font-size: 0.85em;">
+        <div class="pros">
+          <h4>Prós</h4>
+          <ul>
+            <li>Progresso visível rapidamente</li>
+            <li>Fácil revisar cada seção individualmente</li>
+            <li>Pode parar/ajustar no meio se necessário</li>
+            <li>Commits atômicos e organizados</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Contras</h4>
+          <ul>
+            <li>Site fica inconsistente durante implementação</li>
+            <li>Mais commits (bom para git, mas mais verbose)</li>
+            <li>Precisa testar integração no final</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background: #FAF8F5; padding: 1rem; margin-top: 1rem; border-left: 3px solid #B8976A;">
+        <p style="font-size: 0.8em; margin-bottom: 0.5rem;"><strong>Ordem sugerida:</strong></p>
+        <ol style="font-size: 0.8em; line-height: 1.8; padding-left: 1.5rem;">
+          <li>Criar SVGs das variações de logo</li>
+          <li>Nav (logo + estrutura)</li>
+          <li>Hero (tipografia + tagline)</li>
+          <li>Seção Sobre</li>
+          <li>Preocupações + Especialidades + FAQ</li>
+          <li>Footer</li>
+          <li>Ajustes globais CSS (tipografia, espaçamentos)</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="foundation-first" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Foundation First — Base Depois Componentes (recomendado)</h3>
+      <p style="margin: 0.8rem 0;"><strong>Estratégia:</strong> Primeiro criar todos os SVGs e ajustar CSS global (tipografia, espaçamentos, cores), depois aplicar nos componentes</p>
+
+      <div class="pros-cons" style="margin-top: 1rem; font-size: 0.85em;">
+        <div class="pros">
+          <h4>Prós</h4>
+          <ul>
+            <li>Estabelece sistema consistente desde o início</li>
+            <li>Componentes herdam boas práticas automaticamente</li>
+            <li>Menos retrabalho — acerta a base primeiro</li>
+            <li>Alinhado com design system thinking</li>
+            <li>Mais rápido no total</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Contras</h4>
+          <ul>
+            <li>Progresso visual mais lento no início</li>
+            <li>Precisa planejamento mais cuidadoso</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background: #FAF8F5; padding: 1rem; margin-top: 1rem; border-left: 3px solid #B8976A;">
+        <p style="font-size: 0.8em; margin-bottom: 0.5rem;"><strong>Ordem sugerida:</strong></p>
+        <ol style="font-size: 0.8em; line-height: 1.8; padding-left: 1.5rem;">
+          <li>Criar todos os SVGs (logo-nav-desktop, logo-nav-mobile, logo-footer)</li>
+          <li>Atualizar variáveis CSS (tamanhos tipográficos, espaçamentos)</li>
+          <li>Ajustar classes base (h1, h2, h3, section-label, etc)</li>
+          <li>Aplicar logos no nav/footer</li>
+          <li>Refinar cada seção seguindo as bases</li>
+          <li>Polimento final</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="big-bang" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Big Bang — Tudo de Uma Vez</h3>
+      <p style="margin: 0.8rem 0;"><strong>Estratégia:</strong> Criar branch, implementar tudo, testar, e fazer um único merge/commit</p>
+
+      <div class="pros-cons" style="margin-top: 1rem; font-size: 0.85em;">
+        <div class="pros">
+          <h4>Prós</h4>
+          <ul>
+            <li>Consistência garantida — tudo muda junto</li>
+            <li>Um único commit limpo</li>
+            <li>Fácil reverter se necessário</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>Contras</h4>
+          <ul>
+            <li>Sem progresso visível até o final</li>
+            <li>Difícil revisar mudanças grandes</li>
+            <li>Se algo der errado, mais difícil debugar</li>
+            <li>Menos oportunidade para feedback incremental</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="background: #FAF8F5; padding: 1rem; margin-top: 1rem; border-left: 3px solid #B8976A;">
+        <p style="font-size: 0.8em; margin-bottom: 0.5rem;"><strong>Execução:</strong></p>
+        <ol style="font-size: 0.8em; line-height: 1.8; padding-left: 1.5rem;">
+          <li>Criar branch feature/brand-refinement</li>
+          <li>Implementar todas as mudanças</li>
+          <li>Testar tudo localmente</li>
+          <li>Merge para main com um commit</li>
+          <li>Deploy</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 2rem; background: #FEF3F2; border: 1px solid #FCA5A5; padding: 1.5rem;">
+  <h4 style="color: #DC2626; margin-bottom: 0.8rem;">💡 Recomendação</h4>
+  <p style="font-size: 0.9em; line-height: 1.8; color: #991B1B;">
+    <strong>Abordagem B: Foundation First</strong> é a mais adequada para este projeto.
+    Estabelece bases sólidas (SVGs, CSS system) primeiro, depois aplica nos componentes.
+    Resulta em código mais limpo, menos retrabalho, e mantém commits organizados sem perder visibilidade do progresso.
+  </p>
+</div>
+
+<p class="subtitle" style="margin-top: 2rem;">Qual abordagem você prefere?</p>

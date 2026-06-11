@@ -1,0 +1,100 @@
+<h2>Logo SVG: Estrutura & Aplicação</h2>
+<p class="subtitle">Análise do logo atual e opções de uso no nav/footer</p>
+
+<div class="section">
+  <h3>📐 SVG Atual: logo-id.svg (1.5KB)</h3>
+
+  <div class="mockup">
+    <div class="mockup-header">Estrutura do logo-id.svg</div>
+    <div class="mockup-body" style="background: #FAF8F5; padding: 2rem;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div>
+          <h4 style="margin-bottom: 1rem; color: #8B6F47;">Elementos</h4>
+          <ul style="font-size: 0.9em; line-height: 2; color: #4A3F35;">
+            <li><strong>Monograma "ID"</strong> — I (stroke) + D (fill)</li>
+            <li><strong>Linha separadora</strong> — vertical gold pale</li>
+            <li><strong>Nome</strong> — "ILANA DORNELAS"</li>
+            <li><strong>Especialidade</strong> — "DERMATOLOGISTA"</li>
+            <li><strong>Linha decorativa</strong></li>
+            <li><strong>Tagline</strong> — "SUA PELE, SUA IDENTIDADE"</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 1rem; color: #8B6F47;">Dimensões</h4>
+          <ul style="font-size: 0.9em; line-height: 2; color: #4A3F35;">
+            <li>ViewBox: <code>0 0 320 160</code></li>
+            <li>Proporção: <strong>2:1 (horizontal)</strong></li>
+            <li>Fontes: Montserrat (sans)</li>
+            <li>Cores: gold (#B8976A), gold-dark (#8B6F47)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 2rem;">
+  <h3>🎯 Aplicação no Site</h3>
+
+  <div class="options">
+    <div class="option" data-choice="completo" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content">
+        <h3>Logo Completo (atual SVG)</h3>
+        <p><strong>Nav:</strong> Monograma + Nome + Especialidade + Tagline</p>
+        <p><strong>Footer:</strong> Mesma estrutura completa</p>
+        <div class="pros-cons" style="margin-top: 1rem; font-size: 0.85em;">
+          <div class="pros">
+            <h4>Prós</h4>
+            <ul><li>Máxima informação</li><li>Elegante e premium</li></ul>
+          </div>
+          <div class="cons">
+            <h4>Contras</h4>
+            <ul><li>Muito largo no mobile</li><li>Pode competir com menu</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="option" data-choice="adaptativo" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content">
+        <h3>Adaptativo (recomendado)</h3>
+        <p><strong>Nav desktop:</strong> Monograma + Nome</p>
+        <p><strong>Nav mobile:</strong> Só monograma ID</p>
+        <p><strong>Footer:</strong> Logo completo com tagline</p>
+        <div class="pros-cons" style="margin-top: 1rem; font-size: 0.85em;">
+          <div class="pros">
+            <h4>Prós</h4>
+            <ul><li>Responsivo e funcional</li><li>Melhor UX mobile</li><li>Footer valoriza marca</li></ul>
+          </div>
+          <div class="cons">
+            <h4>Contras</h4>
+            <ul><li>Precisa criar variações SVG</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="option" data-choice="minimalista" onclick="toggleSelect(this)">
+      <div class="letter">C</div>
+      <div class="content">
+        <h3>Minimalista</h3>
+        <p><strong>Nav:</strong> Só monograma "ID"</p>
+        <p><strong>Footer:</strong> Só monograma "ID" + texto separado</p>
+        <div class="pros-cons" style="margin-top: 1rem; font-size: 0.85em;">
+          <div class="pros">
+            <h4>Prós</h4>
+            <ul><li>Ultra clean</li><li>Carrega instantâneo</li></ul>
+          </div>
+          <div class="cons">
+            <h4>Contras</h4>
+            <ul><li>Perde informação</li><li>Menos reconhecimento</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top: 2rem;">Qual abordagem faz mais sentido para o site?</p>

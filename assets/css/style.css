@@ -250,3 +250,8 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
   .insta-grid{grid-template-columns:repeat(2,1fr)}
 }
 
+
+
+/* Logo PNG aprovado */
+.nav-logo-img { height: 44px; width: auto; display: block; }
+.footer-logo-img { height: 32px; width: auto; display: block; }
