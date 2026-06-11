@@ -36,7 +36,7 @@
   --card-gap:2rem;
 
   /* Logo sizes */
-  --logo-nav-height:44px;
+  --logo-nav-height:56px;
   --logo-footer-height:32px;
 }
 
@@ -108,6 +108,7 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 .sobre-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:6rem;align-items:center}
 .sobre-photo-wrap{position:relative}
 .sobre-photo-placeholder{height:520px;background:var(--warm);border:0.5px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.photo-initials{font-family:var(--font-serif);font-size:160px;font-weight:300;color:#D4B896;opacity:0.3;letter-spacing:0.05em}
 .sobre-crm{position:absolute;bottom:-1.2rem;right:-1.2rem;background:var(--gold-dark);color:var(--cream);font-size:0.55rem;letter-spacing:0.2em;padding:0.5rem 1rem;font-weight:500;font-family:var(--font-sans)}
 .sobre-text{font-size:var(--font-body);line-height:1.9;color:var(--text-sec);margin-top:1.2rem}
 .sobre-text strong{color:var(--gold-dark);font-weight:500}
@@ -253,5 +254,5 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
 
 
 /* Logo PNG aprovado */
-.nav-logo-img { height: 44px; width: auto; display: block; }
+.nav-logo-img { height: 56px; width: auto; display: block; }
 .footer-logo-img { height: 32px; width: auto; display: block; }
