@@ -1,0 +1,28 @@
+# robots.txt for drailanadornelas.com.br
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /.git/
+Disallow: /.claude/
+
+# Sitemaps
+Sitemap: https://drailanadornelas.com.br/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Facebook (para Open Graph)
+User-agent: facebookexternalhit
+Allow: /
+
+# WhatsApp (para preview de links)
+User-agent: WhatsApp
+Allow: /
