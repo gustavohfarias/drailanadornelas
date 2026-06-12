@@ -98,9 +98,11 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 /* ── HERO ── */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--warm)}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg.no-photo{background:linear-gradient(135deg,var(--warm) 0%,var(--surface) 100%)}
+.hero-bg.no-photo{background:linear-gradient(135deg,#B8976A 0%,#8B6F47 100%)}
 .hero-bg.no-photo::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 60px,rgba(139,111,71,0.025) 60px,rgba(139,111,71,0.025) 61px),repeating-linear-gradient(-45deg,transparent,transparent 60px,rgba(139,111,71,0.025) 60px,rgba(139,111,71,0.025) 61px)}
 .hero-bg.no-photo .hero-overlay{background:transparent}
+.hero-initials-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:1}
+.hero-initials{font-family:var(--font-serif);font-size:clamp(180px,20vw,280px);font-weight:300;color:#FAF8F5;letter-spacing:0.05em;opacity:0.4}
 .hero-photo{width:100%;height:100%;object-fit:cover;object-position:center top}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(242,237,230,0.95) 0%,rgba(242,237,230,0.75) 50%,rgba(242,237,230,0.25) 100%)}
 .hero-content{position:relative;z-index:2;padding:8rem 4rem;max-width:640px}
@@ -222,6 +224,11 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 .ag-submit:hover{background:var(--gold)}
 .ag-note{grid-column:1/-1;font-size:0.62rem;color:var(--text-muted);letter-spacing:0.04em}
 
+/* ── WIDGET LIVANCE ── */
+.section-widget-livance{background:var(--cream);border-top:0.5px solid var(--border);padding:7rem 4rem}
+.widget-container{max-width:900px;margin:0 auto}
+.widget-wrapper{margin-top:2rem;display:flex;justify-content:center;align-items:center;padding:2rem 0}
+
 /* ── FOOTER ── */
 footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space-between;border-top:0.5px solid var(--border);background:var(--cream)}
 .footer-logo{padding:12px}
@@ -249,7 +256,7 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
   .hero-title{font-size:clamp(2.5rem,8vw,3.5rem)}
   .hero-actions{flex-direction:column;width:100%}.hero-actions .btn-primary,.hero-actions .btn-ghost{width:100%;text-align:center}
   .section-title{font-size:clamp(1.8rem,5vw,2.5rem)}
-  .section-sobre,.section-preocupacoes,.section-especialidades,.section-encontrar,.section-faq,.section-instagram,.section-localizacao,.section-agendamento{padding:5rem 1.5rem}
+  .section-sobre,.section-preocupacoes,.section-especialidades,.section-encontrar,.section-faq,.section-instagram,.section-localizacao,.section-agendamento,.section-widget-livance{padding:5rem 1.5rem}
   .sobre-grid,.preo-inner,.localizacao-grid{grid-template-columns:1fr;gap:3rem}
   .sobre-photo-placeholder{height:400px}
   .sobre-photo{object-position:center center}
