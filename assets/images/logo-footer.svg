@@ -1,31 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100">
-  <!-- Monograma ID (versão light para footer) -->
-  <g fill="none" stroke="#D4B896" stroke-width="1.2">
-    <!-- I: haste vertical + serifas -->
-    <line x1="20" y1="20" x2="20" y2="70"/>
-    <line x1="15" y1="20" x2="25" y2="20"/>
-    <line x1="15" y1="70" x2="25" y2="70"/>
-  </g>
+  <!-- I: mais espesso e visível -->
+  <line x1="15" y1="18" x2="15" y2="72" stroke="#8B6F47" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="10" y1="18" x2="20" y2="18" stroke="#8B6F47" stroke-width="2" stroke-linecap="round"/>
+  <line x1="10" y1="72" x2="20" y2="72" stroke="#8B6F47" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- D: haste + curva -->
-  <path d="M22 20 L22 70 M22 20 C22 20 42 20 48 32 C54 42 54 48 48 58 C42 68 22 70 22 70"
-        fill="none" stroke="#B8976A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- D: gap de 10px -->
+  <line x1="30" y1="18" x2="30" y2="72" stroke="#B8976A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M30 18 C30 18 50 18 55 32 C60 42 60 48 55 58 C50 70 30 72 30 72"
+        fill="none" stroke="#B8976A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- Linha vertical separadora -->
-  <line x1="65" y1="28" x2="65" y2="62" stroke="#D4B896" stroke-width="0.5"/>
+  <line x1="68" y1="28" x2="68" y2="62" stroke="#D4B896" stroke-width="0.5"/>
 
   <!-- Nome -->
-  <text x="75" y="42" font-family="Montserrat,Arial,sans-serif" font-size="8"
+  <text x="78" y="42" font-family="Montserrat,Arial,sans-serif" font-size="8"
         font-weight="400" letter-spacing="2.4" fill="#4A3F35">ILANA DORNELAS</text>
 
   <!-- Especialidade -->
-  <text x="75" y="52" font-family="Montserrat,Arial,sans-serif" font-size="6"
+  <text x="78" y="52" font-family="Montserrat,Arial,sans-serif" font-size="6"
         font-weight="300" letter-spacing="2" fill="#8B6F47">DERMATOLOGIA &amp; ESTÉTICA</text>
 
   <!-- Linha decorativa horizontal -->
-  <line x1="75" y1="58" x2="250" y2="58" stroke="#D4B896" stroke-width="0.3"/>
+  <line x1="78" y1="58" x2="250" y2="58" stroke="#D4B896" stroke-width="0.3"/>
 
   <!-- Tagline -->
-  <text x="75" y="67" font-family="Montserrat,Arial,sans-serif" font-size="6"
+  <text x="78" y="67" font-family="Montserrat,Arial,sans-serif" font-size="6"
         font-weight="300" letter-spacing="2" fill="#B8976A" font-style="italic">SUA PELE, SUA IDENTIDADE</text>
 </svg>

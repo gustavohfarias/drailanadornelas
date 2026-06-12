@@ -1,9 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-  <!-- I: haste vertical com serifas -->
-  <line x1="13" y1="10" x2="13" y2="40" stroke="#8B6F47" stroke-width="1.5" fill="none"/>
-  <line x1="9" y1="10" x2="17" y2="10" stroke="#8B6F47" stroke-width="1.5" fill="none"/>
-  <line x1="9" y1="40" x2="17" y2="40" stroke="#8B6F47" stroke-width="1.5" fill="none"/>
-  <!-- D: separado com gap de 5px -->
-  <path d="M22 10 L22 40 M22 10 C22 10 35 10 39 18 C42 24 42 26 39 32 C35 38 22 40 22 40"
-        fill="none" stroke="#B8976A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+  <!-- I -->
+  <line x1="12" y1="10" x2="12" y2="42" stroke="#8B6F47" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="7" y1="10" x2="17" y2="10" stroke="#8B6F47" stroke-width="2" stroke-linecap="round"/>
+  <line x1="7" y1="42" x2="17" y2="42" stroke="#8B6F47" stroke-width="2" stroke-linecap="round"/>
+  <!-- D: gap de 10px -->
+  <line x1="27" y1="10" x2="27" y2="42" stroke="#B8976A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M27 10 C27 10 40 10 44 20 C47 27 47 25 44 32 C40 40 27 42 27 42"
+        fill="none" stroke="#B8976A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
