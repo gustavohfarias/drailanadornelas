@@ -1,13 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-  <!-- Monograma ID -->
-  <g fill="none" stroke="#8B6F47" stroke-width="1.2">
-    <!-- I: haste vertical + serifas -->
-    <line x1="20" y1="10" x2="20" y2="40"/>
-    <line x1="15" y1="10" x2="25" y2="10"/>
-    <line x1="15" y1="40" x2="25" y2="40"/>
-  </g>
-
-  <!-- D: haste + curva -->
-  <path d="M22 10 L22 40 M22 10 C22 10 35 10 38 18 C41 24 41 26 38 32 C35 38 22 40 22 40"
+  <!-- I: haste vertical com serifas -->
+  <line x1="13" y1="10" x2="13" y2="40" stroke="#8B6F47" stroke-width="1.5" fill="none"/>
+  <line x1="9" y1="10" x2="17" y2="10" stroke="#8B6F47" stroke-width="1.5" fill="none"/>
+  <line x1="9" y1="40" x2="17" y2="40" stroke="#8B6F47" stroke-width="1.5" fill="none"/>
+  <!-- D: separado com gap de 5px -->
+  <path d="M22 10 L22 40 M22 10 C22 10 35 10 39 18 C42 24 42 26 39 32 C35 38 22 40 22 40"
         fill="none" stroke="#B8976A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
