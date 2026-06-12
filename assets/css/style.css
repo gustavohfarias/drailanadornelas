@@ -149,7 +149,7 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 .section-especialidades{padding:7rem 4rem;background:var(--cream)}
 .esp-header{margin-bottom:3rem}
 .esp-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border)}
-.esp-card-img{position:relative;height:380px;overflow:hidden}
+.esp-card-img{position:relative;height:420px;overflow:hidden}
 .esp-card-img--destaque{height:420px}
 .esp-card-bg{position:absolute;inset:0;transition:transform 0.6s ease}
 .esp-card-bg--rosto{background:linear-gradient(135deg,#c9b49a 0%,#a8896a 100%)}
