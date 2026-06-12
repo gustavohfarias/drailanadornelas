@@ -1,22 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
-  <!-- I: mais espesso e visível -->
-  <line x1="12" y1="11" x2="12" y2="49" stroke="#8B6F47" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="7" y1="11" x2="17" y2="11" stroke="#8B6F47" stroke-width="2" stroke-linecap="round"/>
-  <line x1="7" y1="49" x2="17" y2="49" stroke="#8B6F47" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- D: começa com gap claro de 10px após o I -->
-  <line x1="27" y1="11" x2="27" y2="49" stroke="#B8976A" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M27 11 C27 11 44 11 48 22 C52 30 52 30 48 38 C44 47 27 49 27 49"
-        fill="none" stroke="#B8976A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Monograma ID em Cormorant Garamond -->
+  <text x="0" y="48" font-family="Cormorant Garamond, Georgia, serif" font-size="52"
+        font-weight="300" letter-spacing="-1" fill="#B8976A">ID</text>
   <!-- Separador -->
-  <line x1="62" y1="18" x2="62" y2="42" stroke="#D4B896" stroke-width="0.5"/>
-
+  <line x1="68" y1="14" x2="68" y2="46" stroke="#D4B896" stroke-width="0.6"/>
   <!-- Nome -->
-  <text x="72" y="29" font-family="Montserrat,Arial,sans-serif" font-size="9"
+  <text x="78" y="30" font-family="Montserrat,Arial,sans-serif" font-size="9"
         font-weight="400" letter-spacing="2.5" fill="#4A3F35">ILANA DORNELAS</text>
-
   <!-- Especialidade -->
-  <text x="72" y="41" font-family="Montserrat,Arial,sans-serif" font-size="6.5"
+  <text x="78" y="43" font-family="Montserrat,Arial,sans-serif" font-size="6.5"
         font-weight="300" letter-spacing="2" fill="#8B6F47">DERMATOLOGIA &amp; ESTÉTICA</text>
 </svg>
