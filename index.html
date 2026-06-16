@@ -452,8 +452,31 @@
   </div>
 </section>
 
+<!-- AGENDAMENTO -->
+<section id="agendamento" class="section-agendamento">
+  <p class="section-label">Agende sua consulta</p>
+  <h2 class="section-title">Sua pele,<br><em>sua identidade</em></h2>
+  <p class="ag-subtitle">Preencha os dados e entraremos em contato para confirmar seu horário</p>
+  <form class="ag-form" onsubmit="handleSubmit(event)">
+    <input type="text" id="ag-nome" placeholder="Nome completo" required autocomplete="name">
+    <input type="tel" id="ag-tel" placeholder="Seu WhatsApp" required autocomplete="tel">
+    <select id="ag-servico" class="ag-form-full" required>
+      <option value="" disabled selected>Selecione o serviço de interesse</option>
+      <option>Dermatologia clínica</option>
+      <option>Estética avançada (botox / preenchimento)</option>
+      <option>Laser & tecnologia</option>
+      <option>Tricologia / saúde dos fios</option>
+      <option>Skincare personalizado</option>
+      <option>Cirurgia dermatológica</option>
+      <option>Avaliação geral — não sei ainda</option>
+    </select>
+    <button type="submit" class="ag-submit" aria-label="Enviar dados e abrir WhatsApp">Enviar via WhatsApp</button>
+    <p class="ag-note">* A consulta de avaliação é paga. Após o preenchimento, você será direcionada ao WhatsApp.</p>
+  </form>
+</section>
+
 <!-- WIDGET LIVANCE -->
-<section id="agendamento" class="section-widget-livance">
+<section class="section-widget-livance">
   <div class="widget-container">
     <p class="section-label" style="text-align:center">Agende sua Consulta</p>
     <h2 class="section-title" style="text-align:center;margin-bottom:3rem">Agendamento<br><em>Online</em></h2>
