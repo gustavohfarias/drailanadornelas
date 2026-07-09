@@ -261,7 +261,7 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
   .section-sobre,.section-preocupacoes,.section-especialidades,.section-encontrar,.section-faq,.section-instagram,.section-localizacao,.section-agendamento,.section-widget-livance{padding:5rem 1.5rem}
   .sobre-grid,.preo-inner,.localizacao-grid{grid-template-columns:1fr;gap:3rem}
   .sobre-photo-placeholder{height:400px}
-  .sobre-photo{object-position:center center}
+  .sobre-photo{object-position:center top}
   .esp-cards{grid-template-columns:1fr}.esp-card-img,.esp-card-img--destaque{height:320px}
   .encontrar-grid{grid-template-columns:1fr}
   .encontrar-card{padding:2rem 1.5rem}
@@ -295,3 +295,6 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
   .hero{min-height:auto;padding:4rem 0}
   .hero-content{padding:4rem 1.5rem 2rem}
 }
+
+
+
