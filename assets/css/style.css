@@ -114,6 +114,11 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 .hero-actions{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
 .hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;cursor:pointer;width:24px;height:40px;border:1px solid rgba(139,111,71,0.3);border-radius:12px;display:flex;align-items:flex-start;justify-content:center;padding-top:6px}
 .hero-scroll span{width:4px;height:8px;background:var(--gold);border-radius:2px;animation:scrolldown 1.8s ease-in-out infinite}
+
+@media(min-width:993px){
+  .hero-bg{left:auto;width:42%}
+  .hero-content{max-width:560px}
+}
 @keyframes scrolldown{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(8px);opacity:0.3}}
 
 /* ── SOBRE ── */
