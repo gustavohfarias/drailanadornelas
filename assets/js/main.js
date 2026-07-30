@@ -56,6 +56,11 @@ function handleSubmit(e) {
     trackEvent('Formulário', 'submit', servico || 'A definir');
   }
 
+  // Conversão para o Google Ads / GTM (fica pronto pra quando o GTM for instalado)
+  if (window.dataLayer) {
+    window.dataLayer.push({ event: 'lead_whatsapp', servico: servico || 'A definir', valor_lead: 1 });
+  }
+
   const msg =
     'Olá, Elara! Vim pelo site da Dra. Ilana Dornelas.\n\n' +
     '*Nome:* ' + nome + '\n' +
@@ -63,12 +68,9 @@ function handleSubmit(e) {
     '*Interesse:* ' + (servico || 'A definir') + '\n\n' +
     'Gostaria de agendar uma consulta.';
 
-  // Delay para mostrar loading
-  setTimeout(() => {
-    abrirWhatsApp(msg);
-    submitBtn.classList.remove('loading');
-    submitBtn.disabled = false;
-  }, 500);
+  // Navegação direta, sem setTimeout: mantém o gesto do usuário e não é
+  // bloqueada pelo bloqueador de pop-up do Safari/iOS.
+  window.location.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
 }
 
 // Remover border vermelho ao digitar
