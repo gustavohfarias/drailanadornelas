@@ -1,4 +1,4 @@
-const WA_NUMBER = '5511925663838';
+const WA_NUMBER = '5511925243636';
 
 function abrirWhatsApp(msg) {
   // Rastrear evento no GA4
