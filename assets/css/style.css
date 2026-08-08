@@ -205,8 +205,10 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 
 /* ── LOCALIZAÇÃO ── */
 .section-localizacao{padding:7rem 4rem;background:var(--cream)}
+.loc-units{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
+.loc-unit{display:flex;flex-direction:column;gap:1.5rem}
 .localizacao-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.loc-details{margin:2.5rem 0 2rem;display:flex;flex-direction:column;gap:1.5rem}
+.loc-details{margin:1.5rem 0 1.5rem;display:flex;flex-direction:column;gap:1.1rem}
 .loc-detail{display:flex;align-items:flex-start;gap:1rem}
 .loc-icon{width:32px;height:32px;border:0.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:0.2rem}
 .loc-icon svg{width:14px;height:14px;stroke:var(--gold);fill:none}
@@ -260,6 +262,7 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
   .section-title{font-size:clamp(1.8rem,5vw,2.5rem)}
   .section-sobre,.section-preocupacoes,.section-especialidades,.section-encontrar,.section-faq,.section-instagram,.section-localizacao,.section-agendamento,.section-widget-livance{padding:5rem 1.5rem}
   .sobre-grid,.preo-inner,.localizacao-grid{grid-template-columns:1fr;gap:3rem}
+  .loc-units{grid-template-columns:1fr;gap:3rem}
   .sobre-photo-placeholder{height:400px}
   .sobre-photo{object-position:center top}
   .esp-cards{grid-template-columns:1fr}.esp-card-img,.esp-card-img--destaque{height:320px}
@@ -287,7 +290,7 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
   .insta-grid{grid-template-columns:repeat(2,1fr)}
   .whatsapp-float{width:52px;height:52px}
   .whatsapp-float svg{width:26px;height:26px}
-  .map-wrap iframe{height:300px}
+  .map-wrap iframe{height:240px}
 }
 
 /* Fix para landscape mobile */
@@ -295,6 +298,4 @@ footer{padding:2.5rem 4rem;display:flex;align-items:center;justify-content:space
   .hero{min-height:auto;padding:4rem 0}
   .hero-content{padding:4rem 1.5rem 2rem}
 }
-
-
 
