@@ -5,6 +5,10 @@ function abrirWhatsApp(msg) {
   if (typeof trackEvent === 'function') {
     trackEvent('WhatsApp', 'click', msg.substring(0, 50));
   }
+  // Conversão para o Google Ads / GTM
+  if (window.dataLayer) {
+    window.dataLayer.push({ event: 'lead_whatsapp', servico: 'Contato direto', valor_lead: 1 });
+  }
   window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
 }
 
