@@ -232,6 +232,7 @@ nav.scrolled{background:rgba(250,248,245,0.98);border-bottom:0.5px solid var(--b
 .ag-submit{grid-column:1/-1;background:var(--gold-dark);color:var(--cream);border:none;padding:1.1rem;font-family:var(--font-sans);font-size:0.65rem;font-weight:500;letter-spacing:0.25em;text-transform:uppercase;cursor:pointer;transition:background 0.3s}
 .ag-submit:hover{background:var(--gold)}
 .ag-note{grid-column:1/-1;font-size:0.62rem;color:var(--text-muted);letter-spacing:0.04em}
+.ag-note-top{font-size:0.85rem;color:var(--gold-dark);margin-bottom:1.5rem;font-weight:500}
 
 /* ── WIDGET LIVANCE ── */
 .section-widget-livance{background:var(--cream);border-top:0.5px solid var(--border);padding:7rem 4rem}
