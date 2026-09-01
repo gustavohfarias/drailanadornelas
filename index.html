@@ -96,6 +96,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+/* Atualização visual 2026-09: cards fotográficos + seção de tecnologias */
+.esp-card-img { position: relative; overflow: hidden; }
+.esp-card-photo {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  display: block; z-index: 0;
+}
+.esp-card-overlay { z-index: 1; }
+.esp-card-content { position: relative; z-index: 2; }
+.esp-card-link {
+  display:inline-block; margin-top:14px; color:#D4B896; text-decoration:none;
+  font-family:Montserrat,sans-serif; font-size:.8rem; letter-spacing:.04em;
+}
+.esp-card-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.section-tecnologias {
+  padding: clamp(72px, 8vw, 118px) clamp(22px, 5vw, 76px);
+  background: #F7F3EE;
+}
+.tec-header { max-width: 760px; margin: 0 auto 46px; text-align: center; }
+.tec-intro {
+  margin: 18px auto 0; max-width: 720px; color: #675D53; line-height: 1.75;
+  font-family: Montserrat, sans-serif; font-size: .92rem; font-weight: 300;
+}
+.tec-grid {
+  width: min(1240px, 100%); margin: 0 auto; display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px;
+}
+.tec-card {
+  background: #fff; border: 1px solid rgba(184,151,106,.18); border-radius: 4px;
+  overflow: hidden; box-shadow: 0 12px 38px rgba(70,58,45,.055);
+  display: flex; flex-direction: column; min-height: 100%;
+}
+.tec-card--wide { grid-column: span 1; }
+.tec-media { aspect-ratio: 4 / 3; background: #F1ECE6; overflow: hidden; }
+.tec-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.tec-body { padding: 24px 24px 26px; display:flex; flex-direction:column; flex:1; }
+.tec-kicker {
+  color:#A88658; text-transform:uppercase; letter-spacing:.16em; font-family:Montserrat,sans-serif;
+  font-size:.62rem; margin-bottom:9px;
+}
+.tec-title {
+  margin:0 0 10px; color:#3F372F; font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.45rem,2vw,1.8rem); font-weight:400; line-height:1.05;
+}
+.tec-desc {
+  margin:0; color:#675D53; font-family:Montserrat,sans-serif; font-size:.82rem;
+  line-height:1.7; font-weight:300;
+}
+.tec-note {
+  width:min(1000px,100%); margin:34px auto 0; padding:18px 22px;
+  border-left:2px solid #B8976A; background:rgba(255,255,255,.58);
+  color:#675D53; font-family:Montserrat,sans-serif; font-size:.78rem; line-height:1.65;
+}
+.tec-cta { text-align:center; margin-top:34px; }
+@media (max-width: 980px) { .tec-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 640px) {
+  .section-tecnologias { padding: 62px 18px; }
+  .tec-grid { grid-template-columns: 1fr; gap: 16px; }
+  .tec-body { padding: 21px 20px 23px; }
+}
+</style>
+
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -237,7 +301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="esp-cards">
     <div class="esp-card-img">
-      <div class="esp-card-bg esp-card-bg--rosto" role="img" aria-label="Imagem de tratamento estético facial"></div>
+      <img class="esp-card-photo" src="assets/images/cards/estetica-facial.webp" width="1200" height="675" loading="lazy" alt="Imagem ilustrativa de cuidado facial">
       <div class="esp-card-overlay"></div>
       <div class="esp-card-content">
         <div class="esp-card-tag">Para o seu rosto</div>
@@ -245,44 +309,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="esp-card-desc">Prevenção e tratamento de rugas e linhas de expressão, com protocolo definido individualmente em consulta.</p>
       </div>
     </div>
+
     <div class="esp-card-img esp-card-img--destaque">
-      <div class="esp-card-bg esp-card-bg--cabelo"></div>
+      <img class="esp-card-photo" src="assets/images/cards/saude-capilar.webp" width="1200" height="675" loading="lazy" alt="Imagem ilustrativa de avaliação dos cabelos e couro cabeludo">
       <div class="esp-card-overlay"></div>
       <div class="esp-card-content">
         <div class="esp-card-tag esp-card-tag--gold">Cabelos e couro cabeludo</div>
         <h3 class="esp-card-title">Saúde Capilar</h3>
         <p class="esp-card-desc">Avaliação de queda de cabelo, afinamento dos fios, alterações do couro cabeludo e outras queixas capilares, com recursos de avaliação conforme indicação médica.</p>
-        <a href="/queda-de-cabelo-sao-paulo/"
-           style="display:inline-block;margin-top:14px;color:#D4B896;text-decoration:none;font-family:Montserrat,sans-serif;font-size:.8rem;letter-spacing:.04em;">
-          Saiba mais sobre queda de cabelo →
-        </a>
+        <a class="esp-card-link" href="/queda-de-cabelo-sao-paulo/">Saiba mais sobre queda de cabelo →</a>
       </div>
     </div>
+
     <div class="esp-card-img">
-      <div class="esp-card-bg esp-card-bg--laser"></div>
+      <img class="esp-card-photo" src="assets/images/cards/laser-tecnologia.webp" width="1200" height="675" loading="lazy" alt="Imagem ilustrativa de tecnologia aplicada ao cuidado da pele">
       <div class="esp-card-overlay"></div>
       <div class="esp-card-content">
         <div class="esp-card-tag">Tecnologia</div>
         <h3 class="esp-card-title">Laser & Tecnologia</h3>
-        <p class="esp-card-desc">IPL, laser fracionado, radiofrequência, ultrassom microfocado e fototerapia.</p>
+        <p class="esp-card-desc">IPL, laser fracionado, radiofrequência, ultrassom microfocado e outros recursos utilizados conforme avaliação médica.</p>
+        <a class="esp-card-link" href="#tecnologias">Conheça as tecnologias →</a>
       </div>
     </div>
-    <div class="esp-card-img">
-  <div class="esp-card-bg esp-card-bg--clinica"></div>
-  <div class="esp-card-overlay"></div>
-  <div class="esp-card-content">
-    <div class="esp-card-tag">Clínica</div>
-    <h3 class="esp-card-title">Avaliação da Pele</h3>
-    <p class="esp-card-desc">Avaliação médica de acne, manchas, rosácea, dermatites, irritações e outras alterações da pele.</p>
 
-    <a href="/avaliacao-dermatologica-sao-paulo/"
-       style="display:inline-block;margin-top:14px;color:#D4B896;text-decoration:none;font-family:Montserrat,sans-serif;font-size:.8rem;letter-spacing:.04em;">
-      Saiba mais sobre avaliação dermatológica →
-    </a>
-  </div>
-</div>
     <div class="esp-card-img">
-      <div class="esp-card-bg esp-card-bg--cirurgia"></div>
+      <img class="esp-card-photo" src="assets/images/cards/avaliacao-pele.webp" width="1200" height="675" loading="lazy" alt="Imagem ilustrativa de avaliação clínica da pele">
+      <div class="esp-card-overlay"></div>
+      <div class="esp-card-content">
+        <div class="esp-card-tag">Clínica</div>
+        <h3 class="esp-card-title">Avaliação da Pele</h3>
+        <p class="esp-card-desc">Avaliação médica de acne, manchas, rosácea, dermatites, irritações e outras alterações da pele.</p>
+        <a class="esp-card-link" href="/avaliacao-dermatologica-sao-paulo/">Saiba mais sobre avaliação dermatológica →</a>
+      </div>
+    </div>
+
+    <div class="esp-card-img">
+      <img class="esp-card-photo" src="assets/images/cards/procedimentos-pele.webp" width="1200" height="675" loading="lazy" alt="Imagem ilustrativa de procedimento realizado na pele">
       <div class="esp-card-overlay"></div>
       <div class="esp-card-content">
         <div class="esp-card-tag">Procedimentos</div>
@@ -290,8 +352,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="esp-card-desc">Avaliação de alterações cutâneas e realização de procedimentos médicos quando houver indicação clínica.</p>
       </div>
     </div>
+
     <div class="esp-card-img">
-      <div class="esp-card-bg esp-card-bg--skincare"></div>
+      <img class="esp-card-photo" src="assets/images/cards/skincare.webp" width="1200" height="675" loading="lazy" alt="Imagem ilustrativa de produtos de cuidados com a pele">
       <div class="esp-card-overlay"></div>
       <div class="esp-card-content">
         <div class="esp-card-tag">Skincare</div>
@@ -300,6 +363,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </div>
+</section>
+
+<!-- TECNOLOGIAS -->
+<section id="tecnologias" class="section-tecnologias" aria-labelledby="tecnologias-title">
+  <div class="tec-header">
+    <p class="section-label">Recursos disponíveis</p>
+    <h2 id="tecnologias-title" class="section-title">Tecnologias utilizadas<br><em>no cuidado da pele</em></h2>
+    <p class="tec-intro">A escolha da tecnologia depende da avaliação médica, das características da pele e do objetivo de cada paciente. A indicação e o protocolo são definidos individualmente em consulta.</p>
+  </div>
+
+  <div class="tec-grid">
+    <article class="tec-card">
+      <div class="tec-media"><img src="assets/images/tecnologias/liftera.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento Liftera"></div>
+      <div class="tec-body"><div class="tec-kicker">Ultrassom microfocado</div><h3 class="tec-title">Liftera</h3><p class="tec-desc">Tecnologia de ultrassom microfocado que pode ser utilizada em protocolos voltados à firmeza e ao contorno, conforme avaliação e indicação médica.</p></div>
+    </article>
+
+    <article class="tec-card">
+      <div class="tec-media"><img src="assets/images/tecnologias/fotona.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento Fotona"></div>
+      <div class="tec-body"><div class="tec-kicker">Laser</div><h3 class="tec-title">Fotona</h3><p class="tec-desc">Plataforma a laser com diferentes possibilidades de uso na pele. A escolha do protocolo depende da indicação clínica e da avaliação individual.</p></div>
+    </article>
+
+    <article class="tec-card">
+      <div class="tec-media"><img src="assets/images/tecnologias/morpheus.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento Morpheus"></div>
+      <div class="tec-body"><div class="tec-kicker">Radiofrequência microagulhada</div><h3 class="tec-title">Morpheus</h3><p class="tec-desc">Recurso que associa microagulhamento e radiofrequência, utilizado quando houver indicação médica para objetivos definidos em consulta.</p></div>
+    </article>
+
+    <article class="tec-card">
+      <div class="tec-media"><img src="assets/images/tecnologias/ipl.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento de luz intensa pulsada"></div>
+      <div class="tec-body"><div class="tec-kicker">Tecnologia de luz</div><h3 class="tec-title">Luz Intensa Pulsada (IPL)</h3><p class="tec-desc">Tecnologia de luz que pode ser indicada para diferentes alterações de pigmentação e vascularização, de acordo com o tipo de pele e a avaliação médica.</p></div>
+    </article>
+
+    <article class="tec-card">
+      <div class="tec-media"><img src="assets/images/tecnologias/laser-co2.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento de laser de CO2"></div>
+      <div class="tec-body"><div class="tec-kicker">Laser fracionado</div><h3 class="tec-title">Laser de CO₂</h3><p class="tec-desc">Laser utilizado em protocolos selecionados para renovação da pele e outras indicações específicas, sempre após avaliação médica individualizada.</p></div>
+    </article>
+
+    <article class="tec-card">
+      <div class="tec-media"><img src="assets/images/tecnologias/etheria.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento Étheria"></div>
+      <div class="tec-body"><div class="tec-kicker">Plataforma tecnológica</div><h3 class="tec-title">Étheria</h3><p class="tec-desc">Plataforma utilizada em protocolos definidos conforme indicação médica. Os parâmetros e a finalidade são selecionados de acordo com cada caso.</p></div>
+    </article>
+
+    <article class="tec-card">
+      <div class="tec-media"><img src="assets/images/tecnologias/analise-facial-ia.webp" width="1200" height="960" loading="lazy" alt="Equipamento ilustrativo de análise facial por imagem, sem marca específica"></div>
+      <div class="tec-body"><div class="tec-kicker">Avaliação por imagem</div><h3 class="tec-title">Análise Facial com Inteligência Artificial</h3><p class="tec-desc">Recurso complementar de imagem que auxilia na observação de características da pele durante a avaliação. O equipamento ilustrado não representa uma marca específica.</p></div>
+    </article>
+  </div>
+
+  <p class="tec-note">As imagens dos equipamentos são ilustrativas. A indicação de qualquer tecnologia depende de consulta e avaliação médica individualizada.</p>
+  <div class="tec-cta"><button class="btn-primary" onclick="document.getElementById('agendamento').scrollIntoView({behavior:'smooth'})" aria-label="Agendar avaliação médica">Agendar uma avaliação</button></div>
 </section>
 
 <!-- O QUE VOCÊ VAI ENCONTRAR -->
