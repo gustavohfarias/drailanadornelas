@@ -106,11 +106,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 .esp-card-overlay { z-index: 1; }
 .esp-card-content { position: relative; z-index: 2; }
+
+/* Links dos cards mais legíveis e com aparência clara de CTA */
 .esp-card-link {
-  display:inline-block; margin-top:14px; color:#D4B896; text-decoration:none;
-  font-family:Montserrat,sans-serif; font-size:.8rem; letter-spacing:.04em;
+  display:inline-flex; align-items:center; width:max-content; max-width:100%;
+  margin-top:18px; padding:10px 14px;
+  color:#FFF9F1; background:rgba(35,28,22,.28);
+  border:1px solid rgba(230,198,158,.9); border-radius:2px;
+  text-decoration:none; text-shadow:0 1px 8px rgba(0,0,0,.28);
+  font-family:Montserrat,sans-serif; font-size:.76rem; font-weight:500;
+  line-height:1.3; letter-spacing:.025em;
+  transition:background .2s ease,border-color .2s ease,transform .2s ease;
 }
-.esp-card-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.esp-card-link:hover {
+  background:rgba(184,151,106,.28); border-color:#E3C49E;
+  text-decoration:none; transform:translateY(-1px);
+}
 
 .section-tecnologias {
   padding: clamp(72px, 8vw, 118px) clamp(22px, 5vw, 76px);
@@ -122,29 +133,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   font-family: Montserrat, sans-serif; font-size: .92rem; font-weight: 300;
 }
 .tec-grid {
-  width: min(1240px, 100%); margin: 0 auto; display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px;
+  width:min(1160px,100%); margin:0 auto; display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px;
+  align-items:stretch;
 }
 .tec-card {
-  background: #fff; border: 1px solid rgba(184,151,106,.18); border-radius: 4px;
-  overflow: hidden; box-shadow: 0 12px 38px rgba(70,58,45,.055);
-  display: flex; flex-direction: column; min-height: 100%;
+  background:#fff; border:1px solid rgba(184,151,106,.18); border-radius:4px;
+  overflow:hidden; box-shadow:0 12px 38px rgba(70,58,45,.055);
+  display:flex; flex-direction:column; height:100%;
 }
-.tec-card--wide { grid-column: span 1; }
-.tec-media { aspect-ratio: 4 / 3; background: #F1ECE6; overflow: hidden; }
-.tec-media img { width:100%; height:100%; object-fit:cover; display:block; }
-.tec-body { padding: 24px 24px 26px; display:flex; flex-direction:column; flex:1; }
+.tec-card:nth-child(7) { grid-column:2; }
+
+/* Moldura idêntica para todas as fotos */
+.tec-media {
+  height:250px; padding:18px; box-sizing:border-box;
+  background:#fff; overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+  border-bottom:1px solid rgba(184,151,106,.10);
+}
+.tec-media img {
+  width:100%; height:100%; object-fit:contain; object-position:center;
+  display:block;
+}
+
+/* Conteúdo começa sempre no mesmo eixo e ocupa alturas equivalentes */
+.tec-body {
+  padding:23px 24px 27px; flex:1;
+  display:grid; grid-template-rows:auto auto 1fr;
+  align-content:start;
+}
 .tec-kicker {
-  color:#A88658; text-transform:uppercase; letter-spacing:.16em; font-family:Montserrat,sans-serif;
-  font-size:.62rem; margin-bottom:9px;
+  min-height:2.35em; color:#A88658; text-transform:uppercase;
+  letter-spacing:.16em; font-family:Montserrat,sans-serif;
+  font-size:.62rem; line-height:1.45; margin-bottom:7px;
 }
 .tec-title {
-  margin:0 0 10px; color:#3F372F; font-family:'Cormorant Garamond',serif;
-  font-size:clamp(1.45rem,2vw,1.8rem); font-weight:400; line-height:1.05;
+  min-height:2.08em; margin:0 0 10px; color:#3F372F;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.45rem,2vw,1.8rem); font-weight:400; line-height:1.04;
+  display:flex; align-items:flex-start;
 }
 .tec-desc {
-  margin:0; color:#675D53; font-family:Montserrat,sans-serif; font-size:.82rem;
-  line-height:1.7; font-weight:300;
+  margin:0; color:#675D53; font-family:Montserrat,sans-serif;
+  font-size:.82rem; line-height:1.7; font-weight:300;
 }
 .tec-note {
   width:min(1000px,100%); margin:34px auto 0; padding:18px 22px;
@@ -152,11 +183,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   color:#675D53; font-family:Montserrat,sans-serif; font-size:.78rem; line-height:1.65;
 }
 .tec-cta { text-align:center; margin-top:34px; }
-@media (max-width: 980px) { .tec-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
-@media (max-width: 640px) {
-  .section-tecnologias { padding: 62px 18px; }
-  .tec-grid { grid-template-columns: 1fr; gap: 16px; }
-  .tec-body { padding: 21px 20px 23px; }
+
+@media (max-width:980px) {
+  .tec-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .tec-card:nth-child(7) {
+    grid-column:1 / -1; width:calc(50% - 11px); justify-self:center;
+  }
+  .tec-media { height:240px; }
+}
+@media (max-width:640px) {
+  .section-tecnologias { padding:62px 18px; }
+  .tec-grid { grid-template-columns:1fr; gap:16px; }
+  .tec-card:nth-child(7) { grid-column:auto; width:100%; }
+  .tec-media { height:230px; padding:15px; }
+  .tec-body { padding:21px 20px 23px; }
+  .tec-kicker,.tec-title { min-height:auto; }
+  .esp-card-link { font-size:.72rem; padding:9px 12px; }
 }
 </style>
 
@@ -375,37 +417,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="tec-grid">
     <article class="tec-card">
-      <div class="tec-media"><img src="assets/images/tecnologias/liftera.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento Liftera"></div>
+      <div class="tec-media"><img src="assets/images/tecnologias/liftera.webp" width="900" height="1200" loading="lazy" alt="Imagem ilustrativa de equipamento Liftera"></div>
       <div class="tec-body"><div class="tec-kicker">Ultrassom microfocado</div><h3 class="tec-title">Liftera</h3><p class="tec-desc">Tecnologia de ultrassom microfocado que pode ser utilizada em protocolos voltados à firmeza e ao contorno, conforme avaliação e indicação médica.</p></div>
     </article>
 
     <article class="tec-card">
-      <div class="tec-media"><img src="assets/images/tecnologias/fotona.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento Fotona"></div>
+      <div class="tec-media"><img src="assets/images/tecnologias/fotona.webp" width="900" height="1200" loading="lazy" alt="Imagem ilustrativa de equipamento Fotona"></div>
       <div class="tec-body"><div class="tec-kicker">Laser</div><h3 class="tec-title">Fotona</h3><p class="tec-desc">Plataforma a laser com diferentes possibilidades de uso na pele. A escolha do protocolo depende da indicação clínica e da avaliação individual.</p></div>
     </article>
 
     <article class="tec-card">
-      <div class="tec-media"><img src="assets/images/tecnologias/morpheus.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento Morpheus"></div>
+      <div class="tec-media"><img src="assets/images/tecnologias/morpheus.webp" width="900" height="1200" loading="lazy" alt="Imagem ilustrativa de equipamento Morpheus"></div>
       <div class="tec-body"><div class="tec-kicker">Radiofrequência microagulhada</div><h3 class="tec-title">Morpheus</h3><p class="tec-desc">Recurso que associa microagulhamento e radiofrequência, utilizado quando houver indicação médica para objetivos definidos em consulta.</p></div>
     </article>
 
     <article class="tec-card">
-      <div class="tec-media"><img src="assets/images/tecnologias/ipl.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento de luz intensa pulsada"></div>
+      <div class="tec-media"><img src="assets/images/tecnologias/ipl.webp" width="900" height="1200" loading="lazy" alt="Imagem ilustrativa de equipamento de luz intensa pulsada"></div>
       <div class="tec-body"><div class="tec-kicker">Tecnologia de luz</div><h3 class="tec-title">Luz Intensa Pulsada (IPL)</h3><p class="tec-desc">Tecnologia de luz que pode ser indicada para diferentes alterações de pigmentação e vascularização, de acordo com o tipo de pele e a avaliação médica.</p></div>
     </article>
 
     <article class="tec-card">
-      <div class="tec-media"><img src="assets/images/tecnologias/laser-co2.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento de laser de CO2"></div>
+      <div class="tec-media"><img src="assets/images/tecnologias/laser-co2.webp" width="900" height="1200" loading="lazy" alt="Imagem ilustrativa de equipamento de laser de CO2"></div>
       <div class="tec-body"><div class="tec-kicker">Laser fracionado</div><h3 class="tec-title">Laser de CO₂</h3><p class="tec-desc">Laser utilizado em protocolos selecionados para renovação da pele e outras indicações específicas, sempre após avaliação médica individualizada.</p></div>
     </article>
 
     <article class="tec-card">
-      <div class="tec-media"><img src="assets/images/tecnologias/etheria.webp" width="640" height="480" loading="lazy" alt="Imagem ilustrativa de equipamento Étheria"></div>
+      <div class="tec-media"><img src="assets/images/tecnologias/etheria.webp" width="900" height="1200" loading="lazy" alt="Imagem ilustrativa de equipamento Étheria"></div>
       <div class="tec-body"><div class="tec-kicker">Plataforma tecnológica</div><h3 class="tec-title">Étheria</h3><p class="tec-desc">Plataforma utilizada em protocolos definidos conforme indicação médica. Os parâmetros e a finalidade são selecionados de acordo com cada caso.</p></div>
     </article>
 
     <article class="tec-card">
-      <div class="tec-media"><img src="assets/images/tecnologias/analise-facial-ia.webp" width="1200" height="960" loading="lazy" alt="Equipamento ilustrativo de análise facial por imagem, sem marca específica"></div>
+      <div class="tec-media"><img src="assets/images/tecnologias/analise-facial-ia.webp" width="1200" height="800" loading="lazy" alt="Equipamento ilustrativo de análise facial por imagem, sem marca específica"></div>
       <div class="tec-body"><div class="tec-kicker">Avaliação por imagem</div><h3 class="tec-title">Análise Facial com Inteligência Artificial</h3><p class="tec-desc">Recurso complementar de imagem que auxilia na observação de características da pele durante a avaliação. O equipamento ilustrado não representa uma marca específica.</p></div>
     </article>
   </div>
