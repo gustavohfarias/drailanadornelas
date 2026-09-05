@@ -200,6 +200,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .tec-kicker,.tec-title { min-height:auto; }
   .esp-card-link { font-size:.72rem; padding:9px 12px; }
 }
+
+/* Ajuste 2026-09: cards de tratamentos mais proporcionais no desktop */
+@media (min-width: 981px) {
+  .section-especialidades .esp-cards {
+    width: min(1320px, calc(100% - 64px));
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .section-especialidades .esp-card-img {
+    min-height: 0 !important;
+    height: auto !important;
+    aspect-ratio: 3 / 2;
+    border-radius: 3px;
+  }
+
+  .section-especialidades .esp-card-photo {
+    object-fit: cover;
+    transform: none;
+  }
+
+  .section-especialidades .esp-card-content {
+    padding: 28px 24px 24px;
+  }
+
+  .section-especialidades .esp-card-overlay {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(28,22,18,.05) 0%,
+        rgba(28,22,18,.18) 40%,
+        rgba(28,22,18,.72) 100%
+      );
+  }
+
+  /* Enquadramento individual para evitar rostos/equipamentos cortados */
+  .section-especialidades .esp-card-img:nth-child(1) .esp-card-photo { object-position: 50% 38%; }
+  .section-especialidades .esp-card-img:nth-child(2) .esp-card-photo { object-position: 52% 48%; }
+  .section-especialidades .esp-card-img:nth-child(3) .esp-card-photo { object-position: 50% 52%; }
+  .section-especialidades .esp-card-img:nth-child(4) .esp-card-photo { object-position: 48% 44%; }
+  .section-especialidades .esp-card-img:nth-child(5) .esp-card-photo { object-position: 50% 44%; }
+  .section-especialidades .esp-card-img:nth-child(6) .esp-card-photo { object-position: 50% 50%; }
+}
+
+/* Tablet: mantém boa proporção sem cards excessivamente altos */
+@media (min-width: 641px) and (max-width: 980px) {
+  .section-especialidades .esp-card-img {
+    aspect-ratio: 4 / 3;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+}
+
 </style>
 
 </head>
