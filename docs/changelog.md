@@ -24,4 +24,16 @@ Formato: [Keep a Changelog](https://keepachangelog.com/) + SemVer.
 - Mapas do Google incorporados nos cards de Itaim Bibi/Moema em `queda-de-cabelo-sao-paulo/index.html` (2026-09-28)
 - Schema `MedicalClinic` (JSON-LD) nas duas unidades em `queda-de-cabelo-sao-paulo/index.html` (2026-09-28)
 
+## [Unreleased] (revisão geral do site, mesmo dia)
+
+### Changed
+- `index.html`: schema.org reestruturado de `Person` isolado (só com endereço do Itaim Bibi) para `@graph` com Person + 2 `MedicalClinic` (Itaim Bibi e Moema) — home não citava a unidade Moema no dado estruturado, apesar de citar visualmente (2026-09-28)
+
+### Removed
+- 4 PNGs de logo não utilizados (`logo_light_solo.png`, `logo_light_horizontal.png`, `logo_dark_solo.png`, `logo_dark_horizontal.png`, 1,6MB total) — não eram referenciados em nenhuma página (logo real é SVG inline), só ocupavam espaço no repo (2026-09-28)
+
+### Nota (revisão, nada a mudar)
+- Home já tinha mapas incorporados e seção de localização completa (WhatsApp por unidade, CEP) — mais robusta que as landing pages tinham antes da correção de hoje
+- GA4 ID substituído corretamente (sem placeholder G-XXXXXXXXXX), viewport/canonical/alt-text ok, sem placeholder esquecido
+
 ---

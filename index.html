@@ -45,24 +45,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Dra. Ilana Dornelas",
-  "honorificPrefix": "Dra.",
-  "jobTitle": "Médica",
-  "image": "https://drailanadornelas.com.br/assets/images/dra-ilana.jpg",
-  "description": "Médica com atendimento voltado à saúde da pele, cabelos, couro cabeludo, estética e tecnologias.",
-  "telephone": "+55-11-92524-3636",
-  "url": "https://drailanadornelas.com.br",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "R. Joaquim Floriano, 413 - 9º andar",
-    "addressLocality": "São Paulo",
-    "addressRegion": "SP",
-    "postalCode": "04534-011",
-    "addressCountry": "BR"
-  },
-  "sameAs": [
-    "https://instagram.com/drailanadornelas"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://drailanadornelas.com.br/#pessoa",
+      "name": "Dra. Ilana Dornelas",
+      "honorificPrefix": "Dra.",
+      "jobTitle": "Médica",
+      "image": "https://drailanadornelas.com.br/assets/images/dra-ilana.jpg",
+      "description": "Médica com atendimento voltado à saúde da pele, cabelos, couro cabeludo, estética e tecnologias.",
+      "telephone": "+55-11-92524-3636",
+      "url": "https://drailanadornelas.com.br",
+      "sameAs": [
+        "https://instagram.com/drailanadornelas"
+      ],
+      "worksFor": [
+        { "@id": "https://drailanadornelas.com.br/#itaim-bibi" },
+        { "@id": "https://drailanadornelas.com.br/#moema" }
+      ]
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://drailanadornelas.com.br/#itaim-bibi",
+      "name": "Dra. Ilana Dornelas — Itaim Bibi",
+      "medicalSpecialty": "Dermatology",
+      "telephone": "+55-11-92524-3636",
+      "url": "https://drailanadornelas.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Joaquim Floriano, 413 - 9º andar",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "04534-011",
+        "addressCountry": "BR"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://drailanadornelas.com.br/#moema",
+      "name": "Dra. Ilana Dornelas — Moema",
+      "medicalSpecialty": "Dermatology",
+      "telephone": "+55-11-92524-3636",
+      "url": "https://drailanadornelas.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. dos Carinás, 185 — 2º andar, Indianópolis",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "04086-010",
+        "addressCountry": "BR"
+      }
+    }
   ]
 }
 </script>
