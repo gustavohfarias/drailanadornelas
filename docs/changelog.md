@@ -12,4 +12,16 @@ Formato: [Keep a Changelog](https://keepachangelog.com/) + SemVer.
 - Mapas do Google incorporados (iframe) nos cards de localização de Itaim Bibi e Moema, na mesma página (2026-09-28)
 - Dado estruturado `MedicalClinic` (JSON-LD) com nome, endereço e telefone das duas unidades, na mesma página (2026-09-28)
 
+### Deploy
+- Publicado em produção (commit b5264ea, push 2026-09-28) — confirmado ao vivo via curl: H1 novo, 2 mapas, 2 blocos MedicalClinic presentes em drailanadornelas.com.br/avaliacao-dermatologica-sao-paulo/
+
+## [Unreleased] (continuação, mesmo dia)
+
+### Changed
+- `queda-de-cabelo-sao-paulo/index.html`: mesma correção aplicada na página de tricologia (grupo de anúncios que já converte melhor, R$58,45/conv vs R$111,64/conv) — H1 "Queda de Cabelo em São Paulo" → "Tricologista no Itaim Bibi e em Moema, São Paulo" (2026-09-28)
+
+### Added
+- Mapas do Google incorporados nos cards de Itaim Bibi/Moema em `queda-de-cabelo-sao-paulo/index.html` (2026-09-28)
+- Schema `MedicalClinic` (JSON-LD) nas duas unidades em `queda-de-cabelo-sao-paulo/index.html` (2026-09-28)
+
 ---
