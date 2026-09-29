@@ -36,4 +36,15 @@ Formato: [Keep a Changelog](https://keepachangelog.com/) + SemVer.
 - Home já tinha mapas incorporados e seção de localização completa (WhatsApp por unidade, CEP) — mais robusta que as landing pages tinham antes da correção de hoje
 - GA4 ID substituído corretamente (sem placeholder G-XXXXXXXXXX), viewport/canonical/alt-text ok, sem placeholder esquecido
 
+## [Unreleased] (auditoria de design vs. manual de marca, 2026-09-29)
+
+Auditado contra `manual_marca_ID_v2.pdf` (No-No List, seção 09). Peso tipográfico do H1 (300, sem bold) e famílias de fonte (só Cormorant + Montserrat) já estavam corretos — sem mudança nesses pontos.
+
+### Fixed
+- Fundo branco puro (`#fff`) trocado por Cream (`#FAF8F5`) em `.tec-card`/`.tec-media` (index.html) e `.lp-card`/`.lp-cta h2` (avaliacao-dermatologica-sao-paulo e queda-de-cabelo-sao-paulo) — manual proíbe branco puro como fundo
+- Gradientes fora da paleta em `assets/css/style.css`: `.esp-card-bg--laser` (era verde `#9eb0a8`→`#7a9088`) agora dourado (`#D4B896`→`#B8976A`); `.esp-card-bg--skincare` (era roxo `#c2b5c8`→`#9a8aa0`) agora dourado escuro (`#8B6F47`→`#1A1410`) — manual proíbe tons de verde/roxo/azul
+
+### Not changed (exceção justificada)
+- Botão flutuante de WhatsApp mantém o verde oficial da marca WhatsApp (`#25D366`) — tecnicamente contraria a regra "nunca verde" do manual, mas é padrão de mercado pra reconhecimento do botão; decidido manter
+
 ---
