@@ -47,4 +47,9 @@ Auditado contra `manual_marca_ID_v2.pdf` (No-No List, seção 09). Peso tipográ
 ### Not changed (exceção justificada)
 - Botão flutuante de WhatsApp mantém o verde oficial da marca WhatsApp (`#25D366`) — tecnicamente contraria a regra "nunca verde" do manual, mas é padrão de mercado pra reconhecimento do botão; decidido manter
 
+## [Unreleased] (bug visual reportado pelo usuário, 2026-09-29)
+
+### Fixed
+- `index.html`, card "Saúde Capilar" (seção Tratamentos): botão "Saiba mais sobre queda de cabelo →" aparecia cortado na borda inferior do card. Causa: um bloco `<style>` inline adicionado numa atualização anterior ("Atualização visual 2026-09") redefiniu `.esp-card-content` de `position:absolute;bottom:0` (regra original do `style.css`) pra `position:relative`, quebrando a ancoragem no rodapé do card. Só esse card estourava os 420px porque tem a descrição mais longa dos 6. Corrigido restaurando `position:absolute;bottom:0;left:0;right:0` no override inline
+
 ---
